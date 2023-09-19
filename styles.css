@@ -541,7 +541,32 @@ footer .contenedor-footer .parte-2 ul li a {
 body{
     margin: 0;
 }
-/*------------------------Medida de 1200px--------------------------------*/
+/*------------------------Medida de 1600px--------------------------------*/
+@media screen and (min-width: 1600px) {
+
+    /*////////////////////////////Otro contenido///////////////////////// */
+    .contenedor-otros {
+        align-items: center;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 70%;
+ 
+    }
+    .cont-otros-1{
+     
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .img-otros {
+        width: 280px;
+        height: 180px;
+        border-radius: 5%;
+    }
+}
 @media screen and (max-width: 1600px) {
 
     /*////////////////////////////Otro contenido///////////////////////// */
@@ -550,8 +575,11 @@ body{
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    .cont-otros-1{
+    
+    }
     .img-otros {
-        width: 200px;
+        width: 205px;
         height: 130px;
         border-radius: 5%;
     }
@@ -624,6 +652,9 @@ body{
     }
     .cont-otros-1 {
         margin: auto;
+        
+            width: auto;
+        
     }
 
     .img-otros {
@@ -786,6 +817,7 @@ body{
         background-image: url("/img/12345.png");
         /* Ruta de tu imagen */
         display: flex;
+        width: 100%;
         background-size: cover;
         /* Escala la imagen para cubrir todo el contenedor */
         background-position: center center;
