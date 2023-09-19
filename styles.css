@@ -15,7 +15,7 @@
     display: none;
 }
 
-.contenedor-header,
+
 .contendor-banner,
 .cont-tarjetas,
 .contenedor-post,
@@ -102,10 +102,11 @@ h1 {
     position: sticky;
     top: 0;
     z-index: 1000;
+
 }
 
 .imgax {
-    width: 40%;
+    width: 30%;
 }
 
 .contenedor-header p {
@@ -116,6 +117,9 @@ h1 {
     display: flex;
     color: rgb(0, 78, 151);
     justify-content: space-between;
+    width: 70%;
+    margin: auto;
+
 }
 
 .buscar {
@@ -549,7 +553,7 @@ body{
         align-items: center;
         
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         width: 70%;
  
@@ -572,7 +576,7 @@ body{
     /*////////////////////////////Otro contenido///////////////////////// */
     .contenedor-otros {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
     .cont-otros-1{
@@ -585,6 +589,51 @@ body{
     }
 }
 @media screen and (max-width: 1200px) {
+    .contenedor-header p {
+        margin-top: 40px;
+        font-size: 100%;
+    }
+    
+    .header-texto {
+        display: flex;
+        color: rgb(0, 78, 151);
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        align-items: center;
+    
+    }
+    .buscar input {
+        width: 0;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: #222;
+        outline: none;
+        border: 1px solid silver;
+        border-radius: 30px;
+        transition: all 0.6s ease;
+    }
+    
+    .btn {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        top: 17px;
+        right: 0;
+        position: absolute;
+        background: rgb(0, 78, 151);
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .buscar:hover input {
+        width: 100px;
+    }
+    
     /* /////////////////////////////////Portada////////////////////////////////////*/
     .contenedor-textos-portada {
         position: absolute;
