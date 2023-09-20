@@ -195,8 +195,11 @@ h1 {
     flex-wrap: nowrap;
     flex-direction: row;
     width: 70%;
-}
 
+}
+.contenedor-tarjetas{
+    margin-top: 6%;
+}
 .imge {
     width: 100%;
 
@@ -343,21 +346,38 @@ h1 {
     margin: auto;
 }
 
-.producto-1 {
+.producto ,.producto-1 {
     margin-bottom: 90px;
     width: 19%;
     height: 30%;
     align-items: center;
-    justify-items: center;
-    margin: 20px;
+justify-content: space-between;
     cursor: pointer;
-}
+    margin: auto;
+align-content: center;
 
+}
+.producto p{
+    justify-content: center;
+    align-items: center;
+}
 .img-producto {
     border: 2px solid rgb(219, 125, 177);
-    width: 100%;
-}
+    max-width: 90%;
+    align-items: center;
+    justify-items: center;
 
+}
+.producto {
+    text-align: center; /* Centra el contenido horizontalmente */
+  }
+  
+  /* Estilos para las imágenes */
+  .img-producto {
+    
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+ 
+  }
 /*////////////////////////////Correo///////////////////////// */
 .contenedor-correos {
     background-color: rgba(0, 78, 151, 0.205);
@@ -415,13 +435,12 @@ footer {
     
 }
 .contenedor-footer {
-    width: 100%;
+  
     display: flex;
     flex-wrap: wrap;
     font-size: 15px;
     color: #222;
     align-items: column;
-    font-size: 100%;
     width: 70%;
     margin: auto;
     
@@ -430,34 +449,10 @@ footer .contenedor-footer .parte-1 ul {
     list-style: none;
     align-items: column;
 }
-footer .contenedor-footer .parte-2 ul {
-    list-style: none;
-}
+
 footer .contenedor-footer .parte-1 ul li a {
     color: black;
     text-decoration: none;
-    font-family: 'Knewave', cursive;
-}
- .contenedor-footer .parte-2 li a  {
-    text-decoration: none;
-    display: inline-block;
-
-    background-color: black;
-    border-radius: 50%;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    top: 17px;
-    background: rgb(0, 0, 0);
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-}
-.contenedor-footer .parte-1 {
-   
-    color: #222;
 }
 
 
@@ -468,18 +463,14 @@ footer .contenedor-footer .parte-1 ul li a {
     justify-content: center;
     display: flex;
     color: aliceblue;
-    /* Cambiamos a flexbox */
-}
-.parte-2 ul li a{
-
-    margin: 10px;
 
 }
 .parte-1 {
     flex: 1;
-
+    display: flex;
 }
-footer .contenedor-footer .parte-1 .parte-2  {
+footer .contenedor-footer  .parte-2  {
+    list-style: none;
     text-decoration: none;
     display: inline-block;
     background-color: black;
@@ -489,7 +480,6 @@ footer .contenedor-footer .parte-1 .parte-2  {
     line-height: 30px;
     top: 17px;
     background: rgb(0, 0, 0);
-    text-align: center;
     color: white;
     font-size: 18px;
     cursor: pointer;
@@ -497,12 +487,15 @@ footer .contenedor-footer .parte-1 .parte-2  {
     display: flex;
     flex-direction: row;
 }
-.parte-2 {
-    flex: 1;
+.parte-2 {  
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     color: aliceblue;
+    list-style: none;
+    margin-left: 25px;
+    margin-top: 12%;
+  
 
 }
 .img-footer-2 {
@@ -511,49 +504,7 @@ footer .contenedor-footer .parte-1 .parte-2  {
 .contenedor-header-movil {
     display: none;
 }
-.parte-2 {
-    color: aliceblue;
-    flex-direction: column;
-    align-items: center; /* Centrar elementos horizontalmente */
-    margin-top: 10px; /* Espacio entre los iconos y el texto */
-    font-size: 12px; /* Tamaño de fuente opcional */
-    color: #777; /* Color de texto opcional */
-    flex-direction: column; /* Colocar los iconos uno debajo del otro */
-  }
-  
-  /* Estilos para los iconos */
-  .parte-2 ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Centrar elementos horizontalmente */
-  }
-  
-  .parte-2 li {
-    margin: 0 5px; /* Espacio entre los iconos */
-    
-  }
-  .parte-2 {
-    
-    flex-direction: column;
-    align-items: center; /* Centrar elementos horizontalmente */
-    margin-top: 10px; /* Espacio entre los iconos y el texto */
-    font-size: 12px; /* Tamaño de fuente opcional */
-    color: #777; /* Color de texto opcional */
-    
-  }
- 
-  /* Estilos para los iconos */
-  .parte-2 {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center; /* Centrar elementos horizontalmente */
-  }
-  
-  .parte-2 li {
-    margin: 5px 0; /* Espacio entre los iconos */
-  }
+
   .copyright-text {
     width: 100%;
     background-color: rgb(255, 251, 238);
@@ -756,9 +707,11 @@ body{
     }
 
     /*///////////////////////Productos//////////////////////////////*/
-    .contendor-productos {
-        width: 100%;
+  
+    .contenedor-footer{
+        width: 80%;
     }
+  
 }
 
 /*-------------------------Medida 960--------------------------------------*/
@@ -799,6 +752,9 @@ body{
         width: 190px;
         height: 130px;
     }
+    .parte-2{
+        margin-top: 0;
+    }
 }
 
 /*-------------------------Medida 800--------------------------------------*/
@@ -818,29 +774,41 @@ body{
     .contenedor-productos {
         display: flex;
         justify-content: space-between;
+
     }
 
-    .producto-1 {
-        text-align: center;
-        transition: opacity 0.3s ease;
-        /* Aplicar transición suave en la propiedad de opacidad */
-    }
-
-    .producto-1:hover {
-        opacity: 0.4;
-        /* Cambiar la opacidad al pasar el mouse por encima */
-    }
-    .cont-otros-1 {
-        position: relative;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-    }
-
-    .cont-otros-1:hover {
-        transform: scale(1.1);
-    }
+  
+ /* Estilos iniciales para las imágenes */
+ .img-producto {
+    width: 250px; /* Ancho deseado */
+    height: auto; /* Mantener la proporción de aspecto */
+    padding: 0;
+    
+}
 
 
+/* Oculta las imágenes en hover por defecto */
+.img-hover {
+    display: none;
+}
+
+/* Estilo cuando el mouse pasa sobre el producto */
+.producto:hover .img-original {
+    display: none;
+}
+
+.producto:hover .img-hover {
+    display: block;
+}
+.cont-otros-1 {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.cont-otros-1:hover {
+    transform: scale(1.1);
+}
 }
 
 /*-------------------------Medida 800--------------------------------------*/
@@ -1057,24 +1025,24 @@ body{
         width: 640px;
         height: 400px;
     }
+    .img-hover {
+        display: none;
+    }
     /*///////////////////////////////Productos//////////////////////////////////////*/
     .contendor-productos {
         justify-content: space-evenly;
         text-align: center;
     }
-    .producto-1 {
+    .producto {
         margin-bottom: 90px;
-        width: 37%;
+        width: 35%;
         height: 30%;
         align-items: center;
         justify-items: center;
         margin: 20px;
     }
 
-    .img-producto {
-        border: 2px solid rgb(219, 125, 177);
-        width: 100%;
-    }
+    
     .contenedor-correos {
         /* Otros estilos para el contenedor si los tienes */
         text-align: center; /* Para centrar el contenido */
@@ -1115,6 +1083,7 @@ body{
       }
     
       .parte-1 {
+        
         margin-right: 0; /* Eliminar margen derecho en elementos de la parte-1 */
       }
       .img-footer-2{
@@ -1122,7 +1091,7 @@ body{
         position: absolute;
         width: 200px;
         height: 600px;
-        margin-top: -600px;
+        margin-top: -350px;
         left: 80%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -1166,22 +1135,26 @@ body{
         width: 80%;
     }
 
-    .parte-2 {
-        margin-left: none;
-        margin-right: 50px;
-        margin-top: none;
-    }
-    .img-footer-2{
-        display: flex;
-        position: absolute;
-        width: 200px;
-        height: 600px;
-        margin-top: -600px;
-        left: 75%;
-        transform: translate(-50%, -50%);
+  
+    .contendor-productos {
+        justify-content: space-evenly;
         text-align: center;
-        
-      }
+        flex-wrap: wrap;
+    }
+    .producto {
+        margin-bottom: 90px;
+        width: 60%;
+        height: 30%;
+        align-items: center;
+        justify-items: center;
+        margin: 20px;
+    }
+    .contenedor-footer{
+        width: 40%;
+        margin:0 ;
+       
+    }
+ 
 }
 @media screen and (max-width: 400px) {
     .img-footer-2{
@@ -1251,5 +1224,25 @@ body{
         margin-left: none;
         margin-right: none;
         margin-top: none;
+        font-size: 6px;
     }
+    footer .contenedor-footer  .parte-2  {
+        list-style: none;
+        text-decoration: none;
+        display: inline-block;
+        background-color: black;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        top: 17px;
+        background: rgb(0, 0, 0);
+        color: white;
+        font-size: 12px;
+        cursor: pointer;
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+    }
+
 }
