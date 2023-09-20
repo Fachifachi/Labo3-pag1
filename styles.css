@@ -705,7 +705,9 @@ body{
         width: 230px;
         height: 130px;
     }
-
+    .contendor-productos{
+        width: 100%;
+    }
     /*///////////////////////Productos//////////////////////////////*/
   
     .contenedor-footer{
@@ -1210,7 +1212,9 @@ body{
         justify-items: center;
         margin: 20px;
     }
-
+    .contendor-productos{
+        width: 100%;
+    }
     .img-producto {
         border: 2px solid rgb(219, 125, 177);
         width: 100%;
