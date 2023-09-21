@@ -53,7 +53,29 @@ nav ul li a {
     text-transform: capitalize;
     background: #ffffff;
 }
+.categorias {
 
+    justify-content: space-between;
+}
+
+.categoria {
+
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+.categoria {
+
+    cursor: pointer;
+    transition: color 0.3s;
+    border-bottom: 2px solid transparent; /* Línea transparente por defecto */
+}
+.categoria:hover {
+    border-bottom: 2px solid rgb(0, 78, 151) /* Línea debajo del elemento al pasar el mouse */
+}
+.categoria:focus {
+    border-bottom: 2px solid #007bff; /* Muestra la línea cuando la categoría está enfocada */
+    outline: none; /* Elimina el borde de enfoque por defecto */
+}
 nav ul li a.active,
 a:hover {
     --background: #ccc;
@@ -165,14 +187,11 @@ h1 {
     align-items: center;
     align-content: center;
     background-size: cover;
-    /* Escala la imagen para cubrir todo el contenedor */
     background-size: auto;
-    /* Mantiene el tamaño original de la imagen */
     background-position: center center;
-    /* Centra la imagen horizontal y verticalmente */
     background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
     min-height: 500px;
+    margin-top: -30px;
 }
 
 .imagen {
@@ -510,6 +529,12 @@ footer .contenedor-footer  .parte-2  {
 body{
     margin: 0;
 }
+@media screen and (max-width: 1340px) and (min-width: 1201px) {
+    .contenedor-tarjetas{
+        margin-top: 0;
+    }
+}
+
 /*------------------------Medida de 1600px--------------------------------*/
 @media screen and (min-width: 1600px) {
 
