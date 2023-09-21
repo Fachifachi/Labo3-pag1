@@ -427,7 +427,7 @@ footer {
     height: auto;
     background-color: rgb(255, 251, 238);
     flex-wrap: wrap;
-    align-items: column;
+    
     
 }
 .contenedor-footer {
@@ -763,10 +763,17 @@ body{
 }
 
 /*-------------------------Medida 800--------------------------------------*/
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 820px) and (max-width: 1623px) {
     .parte-1{
-        flex: 1;
+        flex: auto;
     }
+
+    .parte-1, .parte-2{
+        margin-top:1%;
+
+    }
+
+
 }
 @media screen and (min-width: 800px) {
     .cont-tarjetas div {
