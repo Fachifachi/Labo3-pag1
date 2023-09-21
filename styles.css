@@ -751,8 +751,10 @@ body{
         height: 130px;
     }
     .parte-2{
-        margin-top: 0;
+        margin-top: 12%;
     }
+ 
+    
 }
 
 /*-------------------------Medida 800--------------------------------------*/
@@ -931,12 +933,12 @@ body{
     }
 
     .btn-tarjeta:hover {
-        box-shadow: 0 3px #2c0b8e;
+        box-shadow: 0 3px #080808;
         top: 1px;
     }
 
     .btn-tarjeta:active {
-        box-shadow: 0 0 #2c0b8e;
+        box-shadow: 0 0 #000000;
         top: 5px;
     }
 
@@ -962,6 +964,7 @@ body{
         width: 100%;
         margin: 0px 20px 0px 20px;
     }
+/*////////////////////////////////////////////////////////////*/
 
     .contendor-banner {
         display: flex;
@@ -1109,9 +1112,8 @@ body{
       .img-footer-2{
         display: flex;
         position: absolute;
-        width: 200px;
         height: 600px;
-        margin-top: -350px;
+        margin-top: -380px;
         left: 80%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -1252,7 +1254,7 @@ body{
         margin-left: none;
         margin-right: none;
         margin-top: none;
-        font-size: 6px;
+        font-size: 8px;
     }
     footer .contenedor-footer  .parte-2  {
         list-style: none;
@@ -1260,13 +1262,13 @@ body{
         display: inline-block;
         background-color: black;
         border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
         top: 17px;
         background: rgb(0, 0, 0);
         color: white;
-        font-size: 12px;
+        font-size: 16px;
         cursor: pointer;
         flex-wrap: nowrap;
         display: flex;
