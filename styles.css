@@ -189,7 +189,15 @@ h1 {
 .buscar input:focus {
     width: 240px;
 }
+h1{
+    font-family: 'Radio Canada', sans-serif;
 
+  font-size: 25px;
+  margin-top: 2%;
+
+  
+
+}
 /*////////////////////////////Portada///////////////////////// */
 .contenedor-post {
     display: flex;
@@ -243,7 +251,12 @@ h1 {
     width: 33%;
     margin-left: 10px;
 }
+.texto, p{
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 100%;
 
+
+}
 /*////////////////////////////Personajes///////////////////////// */
 .contenedor-personajes {
     display: flex;
@@ -378,6 +391,7 @@ h1 {
     text-align: center;
     width: 70%;
     margin: auto;
+
 }
 
 .producto ,.producto-1 {
@@ -394,6 +408,7 @@ align-content: center;
 .producto p{
     justify-content: center;
     align-items: center;
+    font-family: 'Radio Canada', sans-serif;
 }
 .img-producto {
     border: 2px solid rgb(219, 125, 177);
@@ -423,15 +438,18 @@ align-content: center;
 .contenedor-correos h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: 'Radio Canada', sans-serif;
 }
 
 .contenedor-correos p {
     font-size: 18px;
     margin: 5px 0;
+
 }
 
 .contenedor-correos form {
     margin-top: 20px;
+
 }
 
 .contenedor-correos input[type="email"] {
@@ -465,6 +483,7 @@ footer {
     height: auto;
     background-color: rgb(255, 251, 238);
     flex-wrap: wrap;
+    font-family: 'Radio Canada', sans-serif;
     
     
 }
@@ -941,6 +960,14 @@ body{
         position: static;
         z-index: 1;
     }
+    h1{
+        font-family: 'Radio Canada', sans-serif;
+    
+      font-size: 40px;
+      margin-top: 10%;
+      
+    
+    }
 
     .contenedor-post {
         background-image: url("/img/12345.png");
@@ -1372,6 +1399,9 @@ margin-bottom: 2px;
         flex-wrap: nowrap;
         display: flex;
         flex-direction: row;
+        
     }
-
+.parte-1, .parte-2{
+margin-left: 15px;
+}
 }
