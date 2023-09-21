@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Sanrio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -18,16 +18,21 @@
 </head>
 
 <body>
-
-    <section class="contenedor-header">
+    <section class="seccion-inicio-pc" id="seccion-inicio-pc">
+        <a>a</a>
+    </section>
+    <section class="contenedor-header" >
         <img src="img/logo_heder.png" alt="cuola" class="imgax">
         <div class="header-texto">
-            <p class="categoria">New</p>
-            <p class="categoria">Collabs</p>
-            <p class="categoria">Characters</p>
-            <p class="categoria">Apparel</p>
-            <p class="categoria">Home</p>
-            <p class="categoria">Plush</p>
+
+            <li><a class="categoria"  href="#seccion-inicio-pc">HOME</a></li>
+            <li><a class="categoria" href="#seccion-home">NEW</a></li>
+            <li><a class="categoria" href="#seccion-novedades">SHOP BY CHARACTER</a></li>
+            <li><a class="categoria" href="#seccion-personajes">SHOP HOME</a></li>
+            <li><a class="categoria" href="#seccion-hogar">EXTRAS</a></li>
+            <li><a class="categoria" href="#seccion-extras">TOYS</a></li>
+            <li><a class="categoria" href="#seccion-productos">EMAIL</a></li>
+            <li><a class="categoria" href="#seccion-correo">HELP</a></li>
             <div class="buscar">
                 <input type="text" placeholder="Buscar" required />
                 <div class="btn">
@@ -35,27 +40,29 @@
                 </div>
             </div>
     </section>
-    <section class="contenedor-header-celular">
+    <section class="contenedor-header-celular" id="seccion-inicio-celular">
         <nav>
             <input type="checkbox" id="check" name="" value="">
             <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
             <img src="img/1111.png" alt="cuola" class="imgax">
             <ul>
-                <li><a class="active" href="#">New</a></li>
-                <li><a href="#">Collabs</a></li>
-                <li><a href="#">Characters</a></li>
-                <li><a href="#">Apparel</a></li>
-                <li><a href="#">Bags</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a class="categoria"  href="#seccion-home">HOME</a></li>
+                <li><a class="categoria" href="#seccion-novedades">NEW</a></li>
+                <li><a class="categoria" href="#seccion-personajes">SHOP BY CHARACTER</a></li>
+                <li><a class="categoria" href="#seccion-hogar">SHOP HOME</a></li>
+                <li><a class="categoria" href="#seccion-extras">EXTRAS</a></li>
+                <li><a class="categoria" href="#seccion-productos">TOYS</a></li>
+                <li><a class="categoria" href="#seccion-correo">EMAIL</a></li>
+                <li><a class="categoria" href="#seccion-ayuda">HELP</a></li>
 
             </ul>
         </nav>
     </section>
-    <section class="contenedor-post">
+    <section class="contenedor-post" id="seccion-home">
         <img src="/img/12345.png" alt="Descripción de la imagen" class="imagen">
     </section>
 
-    <section class="contenedor-tarjetas">
+    <section class="contenedor-tarjetas" id="seccion-novedades">
         
         <div class="cont-tarjetas">
             <div class="tarjeta-1">
@@ -109,7 +116,7 @@
         </div>
     </section>
     <h1>WHO'S YOUR FAVORITE?</h1>
-    <section class="contenedor-personajes">
+    <section class="contenedor-personajes" id="seccion-personajes">
         <img src="img/1.png" alt="cuola" class="imga">
         <img src="img/2.png" alt="cuola" class="imga">
         <img src="img/3.png" alt="cuola" class="imga">
@@ -120,7 +127,7 @@
         <img src="img/8.png" alt="cuola" class="imga">
     </section>
 
-    <section class="contendor-banner">
+    <section class="contendor-banner" id="seccion-hogar">
         <img src="img/portada1.png" alt="cuola" class="img-portada-1">
         <img src="img/portada2.png" alt="cuola" class="img-portada-2">
         <div class="contenedor-textos-portada">
@@ -139,7 +146,7 @@
         </div>
     </section>
     <h1>ALL THE EXTRAS</h1>
-    <section class="contenedor-otros">
+    <section class="contenedor-otros" id="seccion-extras">
         <div class="cont-otros-1">
             <img src="img/a8.jpg" alt="cuola" class="img-otros">
         </div>
@@ -154,7 +161,7 @@
         </div>
     </section>
     <h1>JUST FOR YOU</h1>
-    <section class="contendor-productos">
+    <section class="contendor-productos" id="seccion-productos">
         <div class="producto" id="producto-1">
             <img src="img/prodA1.png" alt="Hello Kitty" class="img-producto img-original">
             <img src="img/prodA2.png" alt="Hello Kitty Hover" class="img-producto img-hover">
@@ -177,70 +184,68 @@
         </div>
 
     </section>
-    <section class="contenedor-correos">
+    <section class="contenedor-correos" id="seccion-correo">
         <h2>Let's stay in touch! We'll let you know about the latest sales and new releases!</h2>
-        
-        <p> Email</p>
-        <form action="#" method="post">
+        <p>Email</p>
+        <form method="post" action="#seccion-inicio-pc">
             <div class="jaja">
                 <input type="email" class="correo" placeholder="Enter your email" required>
-
-                <button type="submit" id="botoon">Sign up</button>
+                <button type="button">Sign up</button>
             </div>
         </form>
     </section>
     <footer>
-        <div class="contenedor-footer">
+        <div class="contenedor-footer" id="seccion-ayuda">
             <div class="parte-1">
 
                 <ul>
                     <h3>WORLD OF SANRIO</h3>
-                    <li><a href="#">Store Locator</a></li>
-                    <li><a href="#">Character Goodies</a></li>
-                    <li><a href="#">Supercute Adventures</a></li>
-                    <li><a href="#">Hello Kitty Cafe</a></li>
-                    <li><a href="#">About Sanrio</a></li>
+                    <li><a class="cat" href="#">Store Locator</a></li>
+                    <li><a class="cat" href="#">Character Goodies</a></li>
+                    <li><a class="cat" href="#">Supercute Adventures</a></li>
+                    <li><a class="cat" href="#">Hello Kitty Cafe</a></li>
+                    <li><a class="cat" href="#">About Sanrio</a></li>
                 </ul>
             </div>
             <div class="parte-1">
 
                 <ul>
                     <h3>MORE</h3>
-                    <li><a href="#">e-Gift Cards</a></li>
-                    <li><a href="#">Deals and Promos</a></li>
-                    <li><a href="#">Merch by Amazon</a></li>
-                    <li><a href="#">Press Releases</a></li>
+                    <li><a class="cat" href="#">e-Gift Cards</a></li>
+                    <li><a class="cat" href="#">Deals and Promos</a></li>
+                    <li><a class="cat" href="#">Merch by Amazon</a></li>
+                    <li><a class="cat" href="#">Press Releases</a></li>
                 </ul>
             </div>
             <div class="parte-1">
 
                 <ul>
                     <h3>NEED HELP?</h3>
-                    <li><a href="#">Returns Center</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Business Opportunities</a></li>
-                    <li><a href="#">CPSIA</a></li>
+                    <li><a class="cat" href="#">Returns Center</a></li>
+                    <li><a class="cat" href="#">FAQs</a></li>
+                    <li><a class="cat" href="#">Contact Us</a></li>
+                    <li><a class="cat" href="#">Business Opportunities</a></li>
+                    <li><a class="cat" href="#">CPSIA</a></li>
                 </ul>
             </div>
             <div class="parte-1">
 
                 <ul>
                     <h3>RESOURCES</h3>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
-                    <li><a href="#">Children's Privacy Policy</a></li>
-                    <li><a href="#">Web Accessibility</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a class="cat" href="#">Privacy Policy</a></li>
+                    <li><a class="cat" href="#">Do Not Sell or Share My Personal Information</a></li>
+                    <li><a class="cat" href="#">Children's Privacy Policy</a></li>
+                    <li><a class="cat" href="#">Web Accessibility</a></li>
+                    <li><a class="cat" href="#">Terms of Service</a></li>
                 </ul>
             </div>
             <div class="parte-1">
                 
-                    <a href="https://www.youtube.com/user/SanrioInc" class="parte-2"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/sanrio/" class="parte-2"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://ar.pinterest.com/sanrio/" class="parte-2"><i class="fa-brands fa-pinterest-p"></i></a>
-                    <a href="https://www.youtube.com/user/SanrioInc" class="parte-2"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/sanrio/" class="parte-2"><i class="fa-brands fa-instagram"></i></a>
+                    <a  href="https://www.facebook.com/Sanrio/" class="parte-2"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a  href="https://twitter.com/sanrio/" class="parte-2"><i class="fa-brands fa-twitter"></i></a>
+                    <a  href="https://ar.pinterest.com/sanrio/" class="parte-2"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a " href="https://www.youtube.com/user/SanrioInc" class="parte-2"><i class="fa-brands fa-youtube"></i></a>
+                    <a  href="https://www.instagram.com/sanrio/" class="parte-2"><i class="fa-brands fa-instagram"></i></a>
 
 
                 
