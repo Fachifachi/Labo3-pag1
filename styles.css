@@ -62,6 +62,16 @@ nav ul li a {
 
     cursor: pointer;
     transition: color 0.3s, background-color 0.3s;
+    font-family: 'Carter One', cursive;
+    font-family: 'Chelsea Market', cursive;
+    font-family: 'Chewy', cursive;
+    font-family: 'DynaPuff', cursive;
+
+
+
+
+
+
 }
 .categoria {
 
@@ -291,15 +301,24 @@ h1 {
 .texto-portada {
     align-items: center;
     justify-content: center;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 130%;
+    margin: 0;
+    
 }
 
 .texto2-portada {
-    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'DynaPuff', cursive;
+    font-size: 260%;
+    color: rgb(0, 78, 151);
+    margin: 0;
+
 }
 
 .texto3-portada {
     font-family: 'Tajawal', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 160%;
 }
 
 .btn-portada {
@@ -748,16 +767,22 @@ body{
     .texto-portada {
         align-items: center;
         justify-content: center;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Edu SA Beginner', cursive;
+        font-size: 130%;
+        
     }
-
+    
     .texto2-portada {
-        font-family: 'Mochiy Pop One', sans-serif;
+        font-family: 'DynaPuff', cursive;
+        font-size: 260%;
+        color: rgb(0, 78, 151);
+    
     }
-
+    
     .texto3-portada {
         font-family: 'Tajawal', sans-serif;
-        font-size: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 160%;
     }
 
     /*///////////////////////////////Otros//////////////////////////////////////*/
@@ -868,6 +893,7 @@ body{
         position: sticky;
         top: 0;
         z-index: 1000;
+        font-family: 'DynaPuff', cursive;
     }
 
     #checkbtn {
@@ -1007,6 +1033,28 @@ body{
         width: 100%;
         margin: 0px 20px 0px 20px;
     }
+    .tarjeta-titulo, h4{
+        font-family: 'DynaPuff', cursive;
+        font-size: 40px;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        color: rgb(0, 78, 151);
+    }
+    .texto, p{
+
+font-family: 'Edu SA Beginner', cursive;
+font-size: 30px;
+margin-bottom: 2px;
+
+    }
+    .tarjeta-contenido{
+      
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+
 /*////////////////////////////////////////////////////////////*/
 
     .contendor-banner {
@@ -1042,16 +1090,24 @@ body{
     .texto-portada {
         align-items: center;
         justify-content: center;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Edu SA Beginner', cursive;
+        font-size: 130%;
+        margin-top: 20px;
+        
     }
-
+    
     .texto2-portada {
-        font-family: 'Mochiy Pop One', sans-serif;
+        font-family: 'DynaPuff', cursive;
+        font-size: 260%;
+        color: rgb(0, 78, 151);
+    
     }
-
+    
     .texto3-portada {
         font-family: 'Tajawal', sans-serif;
-        font-size: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 160%;
+        margin-bottom: 10px;
     }
     .btn-portada{
         min-width: 130px;
